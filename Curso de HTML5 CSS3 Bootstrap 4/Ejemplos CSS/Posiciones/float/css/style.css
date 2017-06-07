@@ -1,0 +1,15 @@
+#div_1 {
+    background-color: red;
+    float: right;
+}
+
+#div_2 {
+    background-color: burlywood;
+    float: left;
+}
+
+#div_3 {
+    background-color: lightseagreen;
+    float: right;
+    clear: left;
+}

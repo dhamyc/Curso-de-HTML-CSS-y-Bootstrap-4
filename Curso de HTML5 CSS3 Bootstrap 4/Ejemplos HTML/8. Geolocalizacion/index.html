@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Geolocalización</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+
+        #map {
+            height: 100%;
+        }
+        /* Optional: Makes the sample page fill the window. */
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--
+        https://developer.mozilla.org/en-US/docs/Web/API/Geolocation
+        Agregar mapa a tu web con google maps
+        https://developers.google.com/maps/documentation/javascript/geolocation
+    -->
+
+    <!--
+        Ingresa a https://console.developers.google.com para genera una KEY
+        Crear un nuevo proyecto
+        Habilitar la API de Maps (Google Maps JavaScript API)
+        Crear credenciales
+    -->
+
+
+    <h1>Geolocation</h1>
+
+    <div>
+        <h2>Your current postion is...</h2>
+        <p>Latitud:<span id="latitud"></span></p>
+        <p>Longitud: <span id="longitud"></span></p>
+        <p>Precisión: <span id="preci"></span> metros</p>
+    </div>
+
+    <div id="map"></div>
+
+
+    <script>
+        var map, infoWindow;
+        var options = {
+            enableHighAccuracy: true,
+            timeout: 5000,
+            maximumAge: 0
+        };
+
+        function success(pos) {
+            var crd = pos.coords;
+
+            document.getElementById("latitud").innerText = crd.latitude;
+            document.getElementById("longitud").innerText = crd.longitude;
+            document.getElementById("preci").innerText = crd.accuracy;
+
+            var myLatLng = {
+                lat: crd.latitude,
+                lng: crd.longitude
+            };
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 18,
+                center: myLatLng
+            });
+
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: 'Hello World!'
+            });
+        };
+
+        function error(err) {
+            console.warn(`ERROR(${err.code}): ${err.message}`);
+        };
+
+        navigator.geolocation.getCurrentPosition(success, error, options);
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjGAxDWXbn-Z51__bYiSamLbnsNpQ8QQI">
+    </script>
+</body>
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Audio y Videos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <h1>Audio y Video</h1>
+
+    <!--
+        <audio>: Representa un sonido o stream de audio.
+        https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio
+    -->
+    <audio controls src="./sound.mp3">
+        Your browser does not support the <code>audio</code> element.
+    </audio>
+
+    <hr />
+
+    <audio controls>
+        <source src="./sound.mp3" type="audio/mp3" />
+    </audio>
+
+    <hr />
+
+    <!--
+        <video>: Representa un video , y sus archivos de audio y capciones asociadas, con la interfaz necesaria para reproducirlos. 
+        https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video
+    -->
+
+    <video width="640" height="360" controls>
+        <source src="./limit.mp4" type="video/mp4">
+    </video>
+
+    <!--
+        **********************************************************
+        Referencia usada de la página de Mozilla Developer Network
+        https://developer.mozilla.org/en/docs/Web/HTML/Element
+        
+        **********************************************************
+    -->
+</body>
+
+</html>

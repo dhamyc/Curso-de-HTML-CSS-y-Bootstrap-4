@@ -1,0 +1,22 @@
+#div_1 {
+    background-color: red;
+    position: static;
+}
+
+#div_2 {
+    background-color: burlywood;
+    position: absolute;
+    right: 50px;
+}
+
+#div_3 {
+    background-color: lightseagreen;
+    position: relative;
+    top: 50px;
+}
+
+#div_4 {
+    background-color: orange;
+    position: absolute;
+    right: 0px;
+}

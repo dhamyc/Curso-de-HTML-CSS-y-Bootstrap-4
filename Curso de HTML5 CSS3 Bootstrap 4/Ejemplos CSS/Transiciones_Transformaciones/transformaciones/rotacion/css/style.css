@@ -1,0 +1,11 @@
+#div_1 {
+    height: 50%;
+    width: 30%;
+    background: rgb(10, 100, 100);
+    transition: all 1s linear;
+}
+
+#div_1:hover {
+    background: rgb(198, 150, 25);
+    transform: rotate(180deg);
+}

@@ -1,0 +1,9 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css');
+
+#div_1 {
+    height: 50%;
+    width: 30%;
+    background: rgb(10, 100, 100);
+    animation-name: bounceInRight;
+    animation-duration: 3s;
+}

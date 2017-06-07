@@ -1,0 +1,35 @@
+#div_1 {
+    background-color: red;
+    width: 400px;
+}
+
+#div_2 {
+    background-color: burlywood;
+}
+
+#div_3 {
+    background-color: lightseagreen;
+}
+
+#div_4 {
+    background-color: orange;
+}
+
+@media screen and (min-width: 480px) {
+    body {
+        background-color: lightgreen;
+    }
+    #div_1 {
+        width: 45%;
+        float: left;
+        margin: 5px;
+    }
+    #div_2 {
+        float: left;
+        width: 45%;
+        margin: 5px;
+    }
+    #div_3 {
+        clear: left;
+    }
+}

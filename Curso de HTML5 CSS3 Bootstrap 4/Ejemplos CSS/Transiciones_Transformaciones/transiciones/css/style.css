@@ -1,0 +1,12 @@
+#div_1 {
+    height: 50%;
+    transition-property: background;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+    background: rgb(98, 19, 125);
+}
+
+#div_1:hover {
+    background: rgb(0, 255, 0);
+}

@@ -1,0 +1,16 @@
+@keyframes example {
+    from {
+        background-color: red;
+    }
+    to {
+        background-color: yellow;
+    }
+}
+
+#div_1 {
+    height: 50%;
+    width: 30%;
+    background: rgb(10, 100, 100);
+    animation-name: example;
+    animation-duration: 4s;
+}

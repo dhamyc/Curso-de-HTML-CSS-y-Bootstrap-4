@@ -1,0 +1,16 @@
+#div_1 {
+    background-color: red;
+    position: relative;
+}
+
+#div_2 {
+    background-color: burlywood;
+    position: fixed;
+    bottom: 50%;
+    right: 0px;
+}
+
+#div_3 {
+    background-color: lightseagreen;
+    position: static;
+}

@@ -1,0 +1,34 @@
+*{
+    color:#fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    background: #8e8;
+    font-size: 35px;
+}
+h2{
+    background: #a5a;
+    font-size: 25px;
+}
+h3{
+    background: #8ff;
+    font-size: 15px;
+}
+div{
+    background: #f90;
+}
+div p{
+    background: #0f3;
+}
+.diferente{
+    background: #f55;
+    font:bold;
+}
+#unico{
+    color:#000;
+    font:bold;
+}
+

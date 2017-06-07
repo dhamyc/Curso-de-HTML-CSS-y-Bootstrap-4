@@ -1,0 +1,13 @@
+#div_1 {
+    height: 50%;
+    width: 30%;
+    margin-left: 50%;
+    background: rgb(10, 100, 100);
+    transition: all 1s linear;
+}
+
+#div_1:hover {
+    margin-left: 50%;
+    background: rgb(198, 150, 25);
+    transform: scale(2, 0.5);
+}

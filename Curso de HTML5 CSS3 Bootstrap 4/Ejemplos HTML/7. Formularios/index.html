@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        form>div {
+            margin: 1em 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--
+        <form>: Representa un formulario, consistendo de controles que puede ser enviado a un servidor para procesamiento.
+        https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form
+    -->
+    <form>
+        <div>
+            <h2>Register form</h2>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="email" required />
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input id="password" type="password" name="password" required>
+        </div>
+        <div>
+            <label>Choose a browser from this list:
+                <input list="browsers" name="myBrowser" />
+            </label>
+
+            <!--
+                <datalist>: This element has been added in HTML5	Representa un conjunto de opciones predefiniddas para otros controles.
+                https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist
+            -->
+
+            <datalist id="browsers">
+                <option value="Chrome">
+                    <option value="Firefox">
+                        <option value="Internet Explorer">
+                            <option value="Opera">
+                                <option value="Safari">
+                                    <option value="Microsoft Edge">
+            </datalist>
+        </div>
+        <div>
+            <label for="team">Team:</label>
+
+            <!--
+                <select>: Representa un control que permite la selección entre un conjunto de opciones.
+                https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select
+            -->
+
+            <select name="team" id="team">
+                <option value="a">Team A</option>
+                <option value="b">Team B</option>
+            </select>
+        </div>
+        <div>
+            <p>¿Tú eres?</p>
+            <input type="radio" name="genre" id="male"><label for="male">Varon</label>
+            <input type="radio" name="genre" id="female"><label for="female">Mujer</label>
+        </div>
+        <div>
+            <input type="checkbox" id="accept" name="accept">
+            <label for="accept">I accepted all terms</label>
+        </div>
+        <div>
+            <p><label for="msge">Mensaje</label></p>
+            <textarea rows="4" cols="50"></textarea>
+        </div>
+        <div>
+            <a href="#">Already have account?</a>
+        </div>
+        <div>
+            <button type="submit">Register</button>
+        </div>
+    </form>
+    <!--
+        **********************************************************
+        Referencia usada de la página de Mozilla Developer Network
+        https://developer.mozilla.org/en/docs/Web/HTML/Element
+        
+        **********************************************************
+    -->
+</body>
+
+</html>

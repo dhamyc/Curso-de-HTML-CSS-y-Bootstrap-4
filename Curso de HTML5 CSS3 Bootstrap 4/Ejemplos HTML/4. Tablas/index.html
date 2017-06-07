@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tablas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <!--
+        <table>: Representa datos con más de una dimensión.
+        https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table
+    -->
+    <table>
+
+        <!--
+            <colgroup>: Representa un conjunto de una o más columnas de una tabla.
+            https://developer.mozilla.org/en-US/docs/Web/HTML/Element/colgroup
+        -->
+
+        <colgroup>
+            <col span="3">
+            <col style="background-color: #0f0">
+        </colgroup>
+
+        <!--
+            <tbody>: Representa el bloque de filas que describen los datos contretos  de una tabla.
+            <thead>: Representa el bloque de filas que describen las etiquetas de columna de una tabla.
+            <tfoot>: Representa los bloques de filas que describen los resúmenes de columna  de una tabla.
+            <tr>: Representa una fila de celdas en una tabla.
+            <th>: Representa una celda encabezado en una tabla. 
+            <td>: Representa una celda de datos en una tabla.
+        -->
+
+        <thead>
+            <tr>
+                <th>Correo</th>
+                <th>Apellidos y Nombres</th>
+                <th>Semestre</th>
+                <th>Edad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>6666666@continental.edu.pe</td>
+                <td>John Doe</td>
+                <td>V</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>4567867@continental.edu.pe</td>
+                <td>Juan Perez</td>
+                <td>II</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>5132156@continental.edu.pe</td>
+                <td>Foo</td>
+                <td>IX</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>1234556@continental.edu.pe</td>
+                <td>Bar</td>
+                <td>X</td>
+                <td>25</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Promedio de edad</td>
+                <td>xx</td>
+            </tr>
+        </tfoot>
+    </table>
+    <!--
+        **********************************************************
+        Referencia usada de la página de Mozilla Developer Network
+        https://developer.mozilla.org/en/docs/Web/HTML/Element
+        
+        **********************************************************
+    -->
+</body>
+
+</html>

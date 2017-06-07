@@ -1,0 +1,31 @@
+@keyframes example {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+    50% {
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+    }
+    75% {
+        background-color: green;
+        left: 0px;
+        top: 200px;
+    }
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+#div_1 {
+    height: 50%;
+    width: 30%;
+    background: rgb(10, 100, 100);
+    animation-name: example;
+    animation-duration: 8s;
+    animation-delay: 10s;
+}

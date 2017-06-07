@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Enlaces</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Estilos solo para efectos demostrativos-->
+    <style>
+        /*Agrega padding*/
+
+        .padding {
+            padding: 20em 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--
+        <a>: Representa un hiperenlace , enlazando a otro recurso.
+        https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a
+    -->
+
+    <!--
+        href="#bottom": indica que el scroll se desplazará a donde se encuentra el elemento con el
+        identificado bottom
+    -->
+
+    <p><a id="top" href="#abajo">Enlace 1 - Con identificador</a></p>
+
+    <!--
+        target="_blank": Indica que el recurso se abrirá en una nueva pestaña.
+    -->
+
+    <p><a href="https://dhamyc.com" target="_blank">Enlace 2 - Enlace Externo - BLANK</a></p>
+
+    <!--
+        mailto: indica que se enviará un correo a la dirección proporcionada, se utilziará
+        la aplicación de mensajería predeterminada que se tenga instalado.
+    -->
+
+    <p><a href="mailto:vroque@dhamyc.com">Enlace 5 - Correo</a></p>
+
+    <p><a href="#">Enlace 6</a></p>
+
+    <p><a href="#">Enlace 7</a></p>
+
+    <!--
+        Imagen que se comporta como un enlace
+    -->
+
+    <p>
+        <a href="https://dhamyc.com" target="_blank">
+            <img src="https://dhamyc.com/wp-content/uploads/2017/04/Dhamyc-logo.png" alt="Logo de dhamyc">
+        </a>
+    </p>
+
+    <p>
+        <a href="tel:+491570156">+49 157 0156</a>
+    </p>
+
+    <!--
+        Espaciador
+    -->
+
+    <div class="padding"></div>
+
+    <p id="abajo">Final de página</p>
+
+    <!--
+        Por defecto si no se especifica un ID en particular, el scroll se desplazará al inicio de la página.
+        Opcional se puede pasar un ID de un elemento que se encuentre al inicio de la página, el comportamiento
+        será similar.
+    -->
+
+    <p><a href="#">Enlace 1 - Con identificador por defecto - Regresa al inicio de la página</a></p>
+
+    <p><a href="#top">Enlace 1 - Con identificador - Regresa al inicio de la página</a></p>
+
+
+    <!--
+        Mas información acerca de target
+        https://www.ibiblio.org/pub/linux/docs/LuCaS/Manuales-LuCAS/doc-curso-html/doc-curso-html/x4275.html
+    -->
+
+    <!--
+        **********************************************************
+        Referencia usada de la página de Mozilla Developer Network
+        https://developer.mozilla.org/en/docs/Web/HTML/Element
+        
+        **********************************************************
+    -->
+</body>
+
+</html>
