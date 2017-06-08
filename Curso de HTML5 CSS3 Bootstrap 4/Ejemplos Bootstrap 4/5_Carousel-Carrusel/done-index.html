@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/font-awesome.min.css">
+  <title>Tooltips</title>
+  <style>
+    /* Small devices (tablets, 768px and up) */
+    @media (max-width: 768px) { 
+      .carousel-inner > .carousel-item > img {
+        height: 360px;
+        margin: 0 auto;
+      }
+    }
+
+    @media (min-width: 768px) { 
+      .carousel-inner > .carousel-item > img {
+        height: 480px;
+        margin: 0 auto;
+      }
+    }
+
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: 992px) { 
+      .carousel-inner > .carousel-item > img {
+        height: 525px;
+        margin: 0 auto;
+      }
+    }
+
+    /* Large devices (large desktops, 1200px and up) */
+    @media (min-width: 1200px) { 
+      .carousel-inner > .carousel-item > img {
+        height: 600px;
+        margin: 0 auto;
+      }
+    }
+
+    .carousel-indicators li {
+      background-color: lightblue;
+    }
+
+    .carousel-indicators .active
+    {
+      background-color: darkcyan;
+    }
+
+    .carousel-control-next-icon {
+      background-image : url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='%450B3EAC'><polygon points='0,0 100,50 0,100'/></svg>");
+      color: black;
+    }
+
+    .carousel-control-prev-icon {
+      background-image : url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='%450B3EAC'><polygon points='100,0 0,50 100,100'/></svg>");
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  
+  <h1>Doctores veterinarios <i class="fa fa-question-circle" aria-hidden="true" data-toggle="popover" data-placement="bottom" data-title="Ayuda" data-content="Cualquier duda o sugerencia llamar al: (+51)948715615."></i> </h1><br> 
+
+  <div class="carousel slide" id="doctores-carousel" data-ride="carousel">
+
+    <ol class="carousel-indicators">
+      <li data-target="#doctores-carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#doctores-carousel" data-slide-to="1"></li>
+    </ol>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block img-fluid" src="./images/doctor-chase.jpg" alt="Imagen del Doctor Chase">
+        <div class="carousel-caption">
+          <div class="bg-primary">
+            <h3 class="text-capitalize text-white">Doctora <small>Maria Chase</small></h3>
+            <p class="text-white">Especialista en cirujias</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img class="d-block img-fluid" src="./images/doctor-gardner.jpg" alt="Imagen del Doctor Gardner">
+        <div class="carousel-caption">
+          <div class="bg-primary">
+            <h3 class="text-capitalize text-white">Doctor <small>Luis Gardner</small></h3>
+            <p class="text-white">Especialista en nutricion</p>
+          </div>
+        </div>
+      </div>
+
+      <a href="#doctores-carousel" class="carousel-control-prev" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true">
+          <span class="sr-only">Anterior</span>
+        </span>
+      </a>
+
+      <a href="#doctores-carousel" class="carousel-control-next" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true">
+          <span class="sr-only">Siguiente</span>
+        </span>
+      </a>
+
+    </div>
+  </div>
+
+</div>
+
+<script src="js/jquery.slim.min.js"></script>
+<script src="js/tether.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
+
+<script>
+  $(function(){
+    $('[data-toggle="popover"]').popover();
+  });
+</script>
+</body>
+</html>
