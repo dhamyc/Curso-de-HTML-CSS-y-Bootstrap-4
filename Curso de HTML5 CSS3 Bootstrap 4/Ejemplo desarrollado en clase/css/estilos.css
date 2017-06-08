@@ -1,0 +1,102 @@
+.nav-link{
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+/* Agregar displey-4 a h1*/
+
+.texto-encabezado{
+    text-align: center;
+}
+
+.bienvenidos{
+    background: url("../imagenes/fondo-encabezado.jpg") no-repeat center top ;
+    color: #fff;
+    background-size: cover; 
+    height: 100vh; /*Viewprotheig*/
+    display: flex;
+    flex-direction: column;
+}
+
+.texto-encabezado {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+}
+.flecha-abajo{
+text-align: center;
+}
+
+.flecha-abajo a {
+    display: inline-block;
+    color: #fff;
+    font-size: 4rem;
+    animation: flecha-animada 2s ease-in-out infinite;
+}
+@keyframes flecha-animada {
+    from {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(6px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/*.btn-primary {
+    color: #fff;
+    background-color: $principal;
+    border-color: transparent;
+    transition: all .5s ease;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active:hover {
+    background-color: $secundario;
+    border-color: transparent;
+}*/
+
+/*-----------------------------
+SECCION AGENCIA
+------------------------------*/
+
+/*.agencia {
+    background: $principal;
+    color: #fff;
+}
+.agencia img {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}*/
+/*----------------------------
+SECCION TU MEJOR ELECCIÓN
+----------------------------*/
+
+/*.tu-mejor-eleccion h2 span {
+    color: $principal;
+}
+.tu-mejor-eleccion ul,
+.tu-mejor-eleccion ul li {
+    list-style: none;
+}
+.tu-mejor-eleccion ul li .fa {
+    font-size: 2.3rem;
+    background: $secundario;
+    border-radius: 50%;
+    width: 4.7rem;
+    height: 4.7rem;
+    line-height: 4.7rem;
+    color: #fff;
+}
+.tu-mejor-eleccion ul li .contenedor-eleccion h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: .8rem;
+}
+.tu-mejor-eleccion ul li {
+    min-height: 9rem;
+}
+
